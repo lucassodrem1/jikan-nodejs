@@ -10,24 +10,26 @@ For more information, please refer to [Jikan documentation](https://jikan.docs.a
 ## Getting Started 
 
 ### Installation
-> if you use npm
+
+if you use npm
 ```
 $ npm install jikan-nodejs
 ```
-> if you use yarn
+
+if you use yarn
 ```
 $ yarn add jikan-nodejs
 ```
 
 ### Example
 
-> Feature: genre.animesByGenre(genreId, limit)
+> Feature: genre.animesByGenre(genreId, params)
 ```js
 const { genre } = require('jikan-nodejs');
 
 async function getAnimesByGenre() {
-  const animes = await genre.animesByGenre(1, 10); // parameters: genreId, limit
-  console.log(animes); // print 10 animes
+  const animes = await genre.animesByGenre(1, { limit: 10 }); // parameters: genreId, { limit }
+  console.log(animes); // print 10 animes of genre 1
 }
 
 getAnimesByGenre(); 
@@ -71,10 +73,13 @@ getAnimesByGenre();
 
 ## Contributors
 
-| <a href="https://github.com/ribeirogab" target="_blank">**Gabriel Ribeiro**</a> |  
-:---:
-| [![ribeirogab](https://avatars3.githubusercontent.com/u/44847326?s=200&u=30a156f0a61f81eaa137cb286ed13e9527916039&v=4)](https://github.com/ribeirogab)    | 
-| <a href="https://github.com/ribeirogab" target="_blank">`https://github.com/ribeirogab`</a> | 
+| [<img src="https://avatars0.githubusercontent.com/u/25018440?s=400&u=5ed52972c721a418083b0b89f4797db100c50e3c&v=4" width="115"><br><sub>@lucassodrem1</sub>](https://github.com/lucassodrem1) | <img width="115"> | <img width="115"> | <img width="115"> | <img width="115"> | <img width="115"> |
+|:-:|:-:|:-:|:-:|:-:|:-:| 
+
+## Author
+
+| [<img src="https://avatars3.githubusercontent.com/u/44847326?s=400&u=30a156f0a61f81eaa137cb286ed13e9527916039&v=4" width="115"><br><sub>@ribeirogab</sub>](https://github.com/ribeirogab) |
+| :---: |
 
 ---
 
@@ -85,7 +90,7 @@ getAnimesByGenre();
     
 ---
 
-## Suporte
+## Support
 
 Contact me!
 
@@ -98,4 +103,3 @@ Contact me!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="https://github.com/ribeirogab" target="_blank">ribeirogab</a>.
